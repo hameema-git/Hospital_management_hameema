@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+{%load static %}
+{% block title %}home{% endblock %}
+{% block content %}
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="true" style="height:400px; width:1000px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" >
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="{% static '/images/hospita4.jpg' %}" style="height:400px;width:1000px;"class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    
+                  </DIV>
+                  
+                  </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static '/images/home1.jpeg' %}" style="height:400px;width:1000px;"class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:black;font-weight:bold;">CARE .COMPASSION . COMMITMENT.</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static '/images/home2.jpg' %}" style="height:400px;width:1000px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:black;font-weight:bold;">SERVICE AT ITS BEST</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static '/images/home3.webp' %}" style="height:400px;width:1000px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:white;font-weight:bold;">SOLUTION TO ALL YOUR WORRIES</h5>
+          
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div style="background-color:orange;width:320px;height:50px;border-radius:10px;position:absolute;left:1000px;bottom:300px;">
+        <a style="font-weight:bold;"> <img src="{% static '/images/emergency.png' %}" 
+                style="width:40px;height:40px;position:absolute;top:5px;left:5px;"><p style="position:absolute;left:60px;top:10px;">
+                        Emergency Number:4985667778</p></a></div>
+     <div style="background-color:orange;width:320px;height:50px;border-radius:10px;position:absolute;left:1000px;bottom:210px;">
+     <a style="font-weight:bold;"> <img src="{% static '/images/telephone.png' %}" 
+        style="width:40px;height:40px;position:absolute;top:5px;left:5px;"><p style="position:absolute;left:60px;top:10px;">
+        Call Us:4985667778</p></a></div>
+        <div style="background-color:orange;width:320px;height:50px;border-radius:10px;position:absolute;left:1000px;bottom:110px;">
+                <a style="font-weight:bold;"> <img src="{% static '/images/appoinment.webp' %}" 
+                   style="width:40px;height:40px;position:absolute;top:5px;left:5px;"><p style="position:absolute;left:60px;top:10px;">
+                   Appoinment:4985667778</p></a></div>
+                   <div style="background-color:orange;width:320px;height:50px;border-radius:10px;position:absolute;left:1000px;bottom:10px;">
+                        <a style="font-weight:bold;"> <img src="{% static '/images/mail.webp' %}" 
+                           style="width:40px;height:40px;position:absolute;top:5px;left:5px;"><p style="position:absolute;left:60px;top:10px;">
+                           Mail Us: ABCHOSP@gmail.com</p></a></div>
+        {% endblock %}

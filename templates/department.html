@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title %}department{% endblock %}
+{% block content %}
+
+
+{% for i in depts %}
+        <div style=" text-align: center; margin-left: 200px; width: 70%; MIN-height: 200px; background-color: gray;  border: 2px solid pink; border-radius: 10px;" >     
+        <h1 style="color: white; padding-top: 10px;">{{ i.dep_name }}</h1>     
+        <p style="color: white; padding-top: 20px;">{{ i.dep_description }}</p>
+        <button style="background-color:white;border-radius:10px;width:120px;height:30px;font-weight:bold;"><a href="{% url 'doctor_list_by_dept' dept_slug=i.slug %}" style="text-decoration:none;" >view doctors<a></button> </div>  
+            {% comment %} <button><a href="#">view doctors<a></button> </div>  {% endcomment %}
+{% endfor %}
+
+{% endblock %}

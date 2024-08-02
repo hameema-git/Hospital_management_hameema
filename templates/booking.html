@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+{% block title %}booking{% endblock %}
+{% block content %}
+<center><b><p style="color:green;font-weight:bold;font-size:25px;">Make An Appointment</p></b></center>
+<div style="width:600px;height:400px;background-color:aquamarine; position:relative;left:370px;">
+        <form action="" method=POST>
+                {% csrf_token %}
+                {% comment %} {{ form.as_p }}  {% endcomment %}
+                {{ form|crispy }} 
+                <br>
+                <button type="submit" style="position:absolute;left:250px;color:black;
+                background-color:cadetblue;font-weight:bold;">SUBMIT</button>
+        </form>
+</div>
+{% endblock %}

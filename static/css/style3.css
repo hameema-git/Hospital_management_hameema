@@ -1,0 +1,44 @@
+.dlogin
+{
+    position:relative;
+    left:500px; 
+    top:50px;
+}
+.login
+{
+    color:black;
+    font-size:45px;
+    font-weight:bold;
+}
+.lemail
+{
+    font-size:20px;
+}
+.iemail
+{
+    width:300px;
+    height:45px;
+    border-radius:5px;
+    border-color:transparent;
+    
+}
+.lpass
+{
+    font-size:20px;
+}
+.ipass
+{
+    width:300px;
+    height:45px; 
+    border-radius:5px;
+    border-color:transparent;
+}
+.button
+{
+    background-color:blue;
+    color:white; 
+    width:100px;
+    height:40px; 
+    border-radius:10px;
+    border-color:transparent;
+}

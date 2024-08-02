@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="{% static '/css/style3.css'%}">
+    </head>
+    <body style="background-image:url('/static/images/background3.jpg')">
+        <div class="dlogin" style="width:300px;height:350px;background-color:cadetblue;position:absolute;left:800px;bottom:100px;" >
+            <center>
+        <label  class="login" style="font-size:30px;font-weight:bold;">Login</label><br><br>
+        <form action="{% url 'login' %}" method="POST" style="" >
+                {% csrf_token %}
+            
+                <label class="lemail" >Email address</label><br><br>
+                <input class="iemail" name="email" placeholder="email" type="email"><br><br><br>
+                <label class="lpass">Password</label><br><br>
+                <input type="password" placeholder="password" class="ipass" ><br><br><br><br>
+                <button class="button" type="submit" style="background-color:white;border-radius:10px;width:80px;height:30px;font-weight:bold;">Submit</button>
+        </form>
+    </center>
+    </div>
+    </body>
+    </html>

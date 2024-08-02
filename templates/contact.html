@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}contact{% endblock %}
+{% block content %}
+
+</table>
+<div style="position:relative;top:80px;">
+<div style="width:620px; position:relative;left:565px;top:20px;">
+        <h4 style="color:midnightblue;font-weight:bold;">Send us a message</h4>
+                <p style="font-size:14px;">If you have any work from me or any types of quries related 
+                        to my tutorial.you can send me message 
+                        from here.It's  my pleasure to help you.</p> 
+</div>
+<div class="row">
+    <div style="padding:20px; width:650px; position:relative;left:550px;">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group" style="margin-bottom:10px;">
+                <input type="text" name="name" id="title1" class="form-control" placeholder="Enter your name" 
+                style="background-color:aliceblue;border-color:transparent;" required>
+                </div>
+            <div class="form-group"style="margin-bottom:10px;">
+                        <input type="text" name="email" id="rating" class="form-control"
+                         placeholder="Enter your email"  required style="background-color:aliceblue;border-color:transparent;" >
+                    </div>
+            <div class="form-group"style="margin-bottom:10px;">
+                <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Enter your message" required style="background-color:aliceblue; border-color:transparent;"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary"style="background-color:aliceblue;color:black;border:1px solid black;">Send Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<img src="{%static '/images/addr1.png' %}" style="width:30px;height:30px;position:absolute;bottom:300px;left:300px;">
+<div style="position:absolute;bottom:220px;left:270px;font-weight:bold;"><center>ABC Hospital<br>viyjaya nagar<br>kollam p.o</center><div> 
+{% endblock%}

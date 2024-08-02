@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}doctors{% endblock %}
+{% block content %}
+<center><p style="color:green;font-size:20px;font-weight:bold;">OUR DOCTORS</p></center>
+<div class="container text-center" style="background-color:lightblue;min-height:300px; padding-top:10px;padding-bottom:10px;">
+
+    {%if dep_name %}
+        <div class="alert alert-info" role="alert">
+            <h2>Department: {{dep_name.dep_name}}</h2></div>
+    {% endif %}
+
+    {% for i in docs %}
+
+          <div class="card" style="width: 18rem;height:250px;display:inline-block;">
+          <img src="{% if i.doc_image %}{{ i.doc_image.url }}{% else %}
+              {% static 'images/default_product.jpg' %}{% endif %}" class="card-img-top" style="width:280px;height:250px;"alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DR. {{i.doc_name}}</h5>
+                  <p class="card-text">{{i.dep_name}} Department</p>
+                  
+                </div>
+              </div>
+               
+    {% endfor %}
+        </div>
+{% endblock %}
+
+

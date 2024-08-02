@@ -1,0 +1,11 @@
+.hometitle
+{
+    color:aqua;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.hometitle:hover
+{
+    color:pink;
+}

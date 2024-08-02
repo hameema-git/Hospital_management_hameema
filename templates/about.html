@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{% block title %}About{% endblock %}
+{% block content %}
+{% load static %}
+
+<div id="carouselExample" class="carousel slide" style="width:675px;height:260px;position:absolute;top:160px;left:20px;" >
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="{% static '/images/h1.jpg' %}"style="height:370px;width:300px;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/images/h2.jpg' %}"style="height:370px;width:300px;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/images/h3.jpg' %}" style="height:370px;width:300px;"class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div style="width:580px;font-size:20px;overflow:auto;position:absolute;top:150px;left:740px;">
+        <center><h5 class="abouttitle" style="color:cadetblue;font-size:30px;font-weight:bold;">About ABC Hospital</h5></center>
+      <p>A one-stop multi super specialty hospital that will take care of all your health and medical needs. ABC Medicity, come up with an expert insight into health services has set highest standards for quality and care to ensure top-notch healthcare experience.
+
+        The hospital designed and conceived in a different way sprawls in Three acres of land adjacent to National Highway, between Palarivattom and Mamangalam, Cochin. Renai Medicity houses more than Forty departments, Envisaged to be a 500 patient bedded hospital Renai Medicity has world class Operation Theatres, 11 separate Intensive Care Units, multiple Cath Labs, State-of-the-art chest pain centre, 
+        24-Hour Accident and Emergency care unit, most modern radiological equipment,</p> 
+        <div style="position:absolute;right:10px;width:1300px;"><p style="position:relative;bottom:13px;">
+          24 Hour Pharmacies and clinical Laboratories, centrally air conditioned Rooms, Suites and Wards, Multiple Restaurants, ample car parking facilities and more
+        
+        Built in Memory of our founder late Polakulath Narayanan, the hospital has evolved to its present form from his extraordinary vision. A dream cherished by him; to provide the most advanced healthcare to the society; a complete hospital that has world class facilities, affordable treatment costs at a location very much in the heart of the city.
+        
+        Upholding the motto of quality healthcare, adopting state-of-the-art equipment and bringing together most 
+        modern facilities, Renai Medicity redefines the healthcare scenario of Kerala. Our vision is to assure 
+        comprehensive and affordable healthcare for all. Renowned specialists along with well-trained paramedical staff
+         ensure a top-quality healthcare experience. From diagnosis to analysis, each phase of treatment is bestowed with
+          utmost care and dedication.</p></div>
+          </div>
+
+        {% endblock %}

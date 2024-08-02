@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{form.p}}
+        <p>Are you sure to delete department?</p>
+        <div>
+            <button type="submit">SAVE</button>
+        </div>
+    </table>
+</form>
+{% endblock %}
